@@ -1,0 +1,59 @@
+ {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #FFC700;
+    color: #0011B2;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .main-image {
+    display: none;
+  }
+  
+  .loading-dog {
+    animation: spin 3s infinite linear;
+    font-size: 100px;
+    display: none;
+    background-color: #ff00c8;
+    z-index: 10;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .main-image {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotateZ(360deg) rotateY(180deg);
+    }
+  }
+  
+  .show {
+    display: block;
+  }
